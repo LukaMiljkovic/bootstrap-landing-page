@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/imgs/person-raised-hand.svg" alt="" height="30px">
+                    Luka
+                    Miljković</a>
+                <button class="btn btn-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Navigation</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Github</a></li>
+                        <li><a class="dropdown-item" href="#">Honorarci</a></li>
+                        <li><a class="dropdown-item" href="#">Email</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main class="gradient-background">
+        <div class="container col-xxl-8 px-4 py-5 d-flex text-light">
+            <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5 hero">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                    <img src="./assets/imgs/undraw_heatmap_uyye.svg" class="d-block mx-lg-auto img-fluid"
+                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-light lh-1 mb-3">
+                        <img src="./assets/imgs/arrow-up-square-fill.svg" alt="" height="40px" class="lvlup"> Level up
+                        your
+                        brand or
+                        product with me
+                    </h1>
+                    <p class="lead my-4">Quickly get noticed by many with a modern and stylish website. I want to
+                        elevate
+                        your idea to the next level and let you share it with others! </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 cta">Let's get started</button>
+                        <button type="button" class="btn btn-outline-light btn-lg px-4 cta">My other work</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

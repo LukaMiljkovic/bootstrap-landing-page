@@ -1,0 +1,80 @@
+.gradient-background {
+  background: linear-gradient(300deg,#80b0c0,#49d2ff,#3b82ce);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.container{
+  animation: popIn 2s ease;
+}
+
+@keyframes popIn {
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta{
+  opacity: 0;
+  animation: popInBtn .7s ease-in forwards;
+  animation-delay: 2s;
+}
+
+@keyframes popInBtn {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.lvlup{
+    position: relative;
+    animation: hoverIcon 1s ease infinite;
+}
+
+@keyframes hoverIcon {
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-30px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@media(min-height: 794px) {
+  main{
+    height: calc(100vh - 59px);
+  }
+}
